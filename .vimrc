@@ -38,8 +38,8 @@ set undofile
 colorscheme sitongpython
 
 " Regex and search
-nnoremap / /\v
-vnoremap / /\v
+" nnoremap / /\v
+" vnoremap / /\v
 set ignorecase
 set smartcase
 set gdefault
@@ -73,7 +73,7 @@ vnoremap <F1> <ESC>
 nnoremap ; :
 
 " Save on moving focus
-" au FocusLost * :wa
+au FocusLost * :wa
 
 " Open this file quickly in split window
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
@@ -115,12 +115,15 @@ set showmatch
 " F4 to turn on and off search highlighting
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
+" F12 to toggle paste mode
+:set pastetoggle=<F12>
+
 " Highlight trailing spaces
 highlight RedundantSpaces ctermbg=white guibg=white
 match RedundantSpaces /\s\+$\| \+\ze\t/
 hi NonText guifg=white guibg=white
 
-" Leader 
+" Leader
 let mapleader = ","
 let g:mapleader = ","
 
