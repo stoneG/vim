@@ -13,15 +13,7 @@ set ai
 set ruler
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
-<<<<<<< HEAD
-<<<<<<< HEAD
 set expandtab " Default 4 space tabs
-=======
-set expandtab "4 space tabs
->>>>>>> b6616f1e8a46082ec8cc5e96a1c2e2f424f729a6
-=======
-set expandtab "4 space tabs
->>>>>>> b6616f1e8a46082ec8cc5e96a1c2e2f424f729a6
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -43,16 +35,10 @@ set laststatus=2
 set relativenumber
 set undofile
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 " Indentation by file type
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
-=======
->>>>>>> b6616f1e8a46082ec8cc5e96a1c2e2f424f729a6
-=======
->>>>>>> b6616f1e8a46082ec8cc5e96a1c2e2f424f729a6
 colorscheme sitongpython
 
 " Regex and search
@@ -136,16 +122,10 @@ set showmatch
 " F12 to toggle paste mode
 :set pastetoggle=<F12>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 " F5 word wrap mode (good for writing blog posts)
 nnoremap <F5> :set linebreak<CR>
 nnoremap <C-F5> :set nolinebreak<CR>
 
-=======
->>>>>>> b6616f1e8a46082ec8cc5e96a1c2e2f424f729a6
-=======
->>>>>>> b6616f1e8a46082ec8cc5e96a1c2e2f424f729a6
 " Highlight trailing spaces
 highlight RedundantSpaces ctermbg=white guibg=white
 match RedundantSpaces /\s\+$\| \+\ze\t/
@@ -177,11 +157,3 @@ function! <SID>SynStack()
     endif
     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-           
->>>>>>> b6616f1e8a46082ec8cc5e96a1c2e2f424f729a6
-=======
-           
->>>>>>> b6616f1e8a46082ec8cc5e96a1c2e2f424f729a6
